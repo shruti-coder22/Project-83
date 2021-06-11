@@ -42,9 +42,6 @@ function my_touchmove(e)
     ctx.beginPath();
     ctx.strokeStyle = color;
     ctx.lineWidth = width_of_line;
-    ctx.arc(current_position_of_touch_x, current_position_of_touch_y, 40, 0, 2 * Math.PI);
-    ctx.stroke();
-
 
     console.log("Last position of x and y coordinates = ");
     console.log("x = " + last_position_of_x + "y = " + last_position_of_y);
@@ -66,6 +63,3 @@ function clearArea() {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 }
     // end of old same old as the paint web app
-
-}
-
